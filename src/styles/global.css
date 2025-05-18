@@ -1,1 +1,18 @@
 @import 'tailwindcss';
+
+@theme inline {
+  --default-font-family: Karla, sans-serif;
+  --font-heading: Inter, sans-serif;
+
+  --default-transition-duration: 200ms;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-900 text-zinc-300 antialiased;
+  }
+}
+
+@utility container {
+  @apply max-w-screen px-6 md:px-8 xl:px-22;
+}
